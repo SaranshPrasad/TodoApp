@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const EventEmitter = require("events");
 const event = new EventEmitter();
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3030
 
 
 app.use(express.static("public"));
